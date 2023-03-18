@@ -49,5 +49,12 @@ for filepath in filepaths:
     pdf.cell(w=30, h=8, txt="", border=1)
     pdf.cell(w=30, h=8, txt=str(total_sum), border=1, ln=1)
 
+    pdf.set_font(family="Times", size=10)
+    pdf.cell(w=30, h=8, txt=f"The Total amount is {total_sum}", ln=1)
+
+    pdf.set_font(family="Times", size=10)
+    pdf.cell(w=30, h=8, txt=f"Pythinhow")
+    pdf.image("pythonhow.png", w=10)
+
     pdf.output(F"pdfs/{filename}.pdf")
 
